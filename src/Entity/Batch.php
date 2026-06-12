@@ -12,7 +12,7 @@ class Batch
     private BatchStatus $status;
     private ?string $receivedAt;
 
-    // Champ supplémentaire pour affichage (nom du médicament)
+
     private ?string $medicationName;
 
     public function __construct(
