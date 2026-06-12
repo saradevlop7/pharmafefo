@@ -44,6 +44,5 @@ CREATE TABLE IF NOT EXISTS stock_movements (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- Utilisateur administrateur par défaut (mot de passe : admin123)
 INSERT INTO users (username, password, role) VALUES
 ('admin', '$2y$10$L/w7OgKiWEWKTLN.sePliuF1zI2eNOimb/OfpVKoLDETF.388GJOm', 'ADMIN');
