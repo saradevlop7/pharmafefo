@@ -31,19 +31,19 @@
             $daysRemaining = $expiryDate > $today ? (int) $diff->days : -(int) $diff->days;
 
           
-            if ($daysRemaining <= 30) {
-                $level = 'red';
-                $levelLabel = 'Rouge (< 30 jours)';
-            } elseif ($daysRemaining <= 90) {
-                $level = 'orange';
-                $levelLabel = 'Orange (< 90 jours)';
-            } else {
-                $level = 'green';
-                $levelLabel = 'Vert (> 6 mois)';
-                if ($daysRemaining <= 180) {
-                    $levelLabel = 'Vert (< 6 mois)';
-                }
-            }
+if ($daysRemaining < 30) {
+    $level = 'red';
+    $levelLabel = 'Rouge (< 30 jours)';
+} elseif ($daysRemaining < 90) {
+    $level = 'orange';
+    $levelLabel = 'Orange (< 90 jours)';
+} elseif ($daysRemaining > 180) {
+    $level = 'green';
+    $levelLabel = 'Vert (> 6 mois)';
+} else {
+    $level = 'orange';
+    $levelLabel = 'Orange';
+}
 
           
             if ($filterCritical && $level !== 'red') continue;
