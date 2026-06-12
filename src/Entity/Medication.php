@@ -47,7 +47,10 @@ class Medication
         return $this->description;
     }
 
-  
+    public function setDescription(?string $description): void
+    {
+        $this->description = $description;
+    }
 
     public function getUnitPrice(): float
     {
