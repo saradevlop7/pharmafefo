@@ -6,8 +6,8 @@ class Database
 
     private const DB_HOST = 'localhost';
     private const DB_NAME = 'pharmafefo';
-    private const DB_USER = 'pharma';
-    private const DB_PASS = 'pharma123';
+    private const DB_USER = 'root';
+    private const DB_PASS = ''; 
 
     public static function getConnection(): PDO
     {
