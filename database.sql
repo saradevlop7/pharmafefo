@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS medications (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Table des lots
+
 CREATE TABLE IF NOT EXISTS batches (
     id INT AUTO_INCREMENT PRIMARY KEY,
     medication_id INT NOT NULL,
