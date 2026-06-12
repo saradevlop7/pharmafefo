@@ -13,8 +13,7 @@
 <form method="POST" class="form-standard">
     <div class="form-group">
        <?php $medications = $medications ?? []; ?>
-
-<?php foreach ($medications as $med): ?>
+      <?php foreach ($medications as $med): ?>
     <option value="<?= $med->getId() ?>">
         <?= htmlspecialchars($med->getName()) ?>
     </option>
