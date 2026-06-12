@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS batches (
     FOREIGN KEY (medication_id) REFERENCES medications(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- Table des mouvements de stock
+
 CREATE TABLE IF NOT EXISTS stock_movements (
     id INT AUTO_INCREMENT PRIMARY KEY,
     batch_id INT NOT NULL,
