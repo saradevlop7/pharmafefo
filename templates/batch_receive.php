@@ -12,12 +12,13 @@
 
 <form method="POST" class="form-standard">
     <div class="form-group">
-        <label for="medication_id">Médicament *</label>
-        <select id="medication_id" name="medication_id" required>
-            <option value="">-- Sélectionner --</option>
-            <?php foreach ($medications as $med): ?>
-                <option value="<?= $med->getId() ?>"><?= htmlspecialchars($med->getName()) ?></option>
-            <?php endforeach; ?>
+       <?php $medications = $medications ?? []; ?>
+
+<?php foreach ($medications as $med): ?>
+    <option value="<?= $med->getId() ?>">
+        <?= htmlspecialchars($med->getName()) ?>
+    </option>
+<?php endforeach; ?>
         </select>
     </div>
     <div class="form-group">
