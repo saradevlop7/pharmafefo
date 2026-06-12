@@ -30,7 +30,7 @@
             $diff = $today->diff($expiryDate);
             $daysRemaining = $expiryDate > $today ? (int) $diff->days : -(int) $diff->days;
 
-            // Déterminer le niveau d'alerte
+          
             if ($daysRemaining <= 30) {
                 $level = 'red';
                 $levelLabel = 'Rouge (< 30 jours)';
