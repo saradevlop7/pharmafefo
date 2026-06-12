@@ -45,7 +45,7 @@
                 }
             }
 
-            // Filtre critique
+          
             if ($filterCritical && $level !== 'red') continue;
             $hasRows = true;
         ?>
