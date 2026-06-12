@@ -11,6 +11,8 @@ class AuthController
         $this->userRepository = new UserRepository();
     }
 
+
+    
     public function login(): void
     {
         $error = null;
