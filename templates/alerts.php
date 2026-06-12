@@ -1,6 +1,10 @@
 <?php $pageTitle = 'Alertes de péremption'; ?>
 <?php ob_start(); ?>
 
+<?php
+$filterCritical = $filterCritical ?? false;
+?>
+
 <h1>Alertes de péremption</h1>
 
 <div class="filter-bar">
