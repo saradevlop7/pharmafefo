@@ -27,6 +27,7 @@ $filterCritical = $filterCritical ?? false;
         <?php
         $today = new DateTime();
         $hasRows = false;
+        $batches = $batches ?? [];
         foreach ($batches as $batch):
             if ($batch->getStatus() === BatchStatus::EXPIRED) continue;
 
