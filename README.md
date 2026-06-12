@@ -97,4 +97,11 @@ pharmafefo/
 - PDO / MySQL
 - Architecture MVC
 - Enum PHP 8.1
-- CSS natif
+- CSS natiF
+- <img width="1276" height="844" alt="image" src="https://github.com/user-attachments/assets/f5244646-4904-4141-97fc-37b88c438cc2" />
+<img width="1633" height="895" alt="image" src="https://github.com/user-attachments/assets/8120bb9b-5773-4f84-abb5-3c01a5454751" />
+<img width="1302" height="889" alt="image" src="https://github.com/user-attachments/assets/2f713c81-28cb-47e5-b965-ba0b9e399f98" />
+
+
+
+- 
